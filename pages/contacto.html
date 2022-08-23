@@ -7,47 +7,74 @@
     <link rel="stylesheet" href="../css/styles.css">
     <title>contacto</title>
 </head>
-<body class="grid-contenedor-padre">
+<body>
+    <div class="container">
     <header class="fondoheader">
         <img src="../images/encabezado/Shisen Lab.jpg" alt="tituloshisenlab">        
-        </header>
-        <nav class="nav">
-            <ul>
+        <div class="search">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="buscar">
+                <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+            </form>
+            </div>
+        <nav class="col-lg-9 col-md-8 col-sm-12">
+            <ul class="acorh">
                 <li id="inicio"><a href="../index.html">inicio</a>
                 <li id="camaras"><a href="camaras.html">camaras</a>
+                <ul>
+                    <li><a href="./pages/formato35mm/formato35mm.html">formato35mm</a></li>
+                    <li><a href="./pages/formato120mm/formato120mm.html">formato120mm</a></li>
+                    <li><a href="./pages/formato110mm/formato110mm.html">formato110mm</a></li>
+                    <li><a href="./pages/pointandshot/pointandshot.html">piontandshot</a></li>
+                    <li><a href="./pages/instantaneas/instantaneas.html">instantaneas</a></li>
+                </ul>
                 </li>
                 <li id="film"><a href="film.html">Film</a>
+                <ul>
+                    <li><a href="./pages/film35mm/film35mm.html">film 35mm</a></li>
+                    <li><a href="./pages/film120mm/film120mm.html">film 120mm</a></li>
+                    <li><a href="./pages/film110mm/film110mm.html">film 110mm</a></li>
+                    <li><a href="./pages/filminstantaneo/filminstantaneo.html">film instantaneo</a></li>
+                </ul>
                 </li>
                 <li id="servicios"><a href="servicios.html">servicios</a>
+                <ul>
+                    <li><a href="./pages/digitalizacion/digitalizacion.html">digitalizacion</a></li>
+                    <li><a href="./pages/revelados+digitalizacion/reveladosydigitalizado.html">revelado y digitalizacion</a></li>
+                </ul>
                 </li><li id="lentes"><a href="lentes.html">lentes</a>
                 </li>
                 <li id="contacto"><a href="contacto.html">contacto</a>
             </ul>
         </nav>
-            <section class="form">
-            <form action=""></form>
-                <div class="top">
-                    <p>Dejenos sus datos para que nos comuniquemos con usted</p>
-                </div>
-                <fieldset>
-                <legend class="top">Formulario de contacto</legend>
-                <div style="position: relative;"><label for="nombre">nombre</label><br>
-                <input type="text" name ="nombre"><br>
-                </div>
-                <label for="telefono">telefono</label><br>
-                <input type="number"name="telefono"><br>
-                <label for="email">email</label><br>
-                <input type="email"name="email"><br>
-                <label for="">cuando quiere ser contactado</label><br>
-                <input type="checkbox"value="m" name="juana">mañana <br>
-                <input type="checkbox"value="t" name="felipe">tarde <br>
-                </fieldset> 
-                <a class="css-boton boton-send" id="btn" href="#">
-                    Enviar
-                </a>
-                </p>
-            </section>
-    <footer class=footer> 
+        </header>
+    <form action=""></form>
+    <div>
+    <p class="top">Dejenos sus datos para que nos comuniquemos con usted</p>
+    </div>
+    <div class="mb-3">
+    <fieldset>
+        <legend class="top">Formulario de contacto</legend>
+        <div style="position: relative;"><label for="nombre">nombre</label><br>
+    <input type="text" name ="nombre"><br>
+    </div>
+    <label for="telefono">telefono</label><br>
+    <input type="number"name="telefono"><br>
+    <label for="email">email</label><br>
+    <input type="email"name="email"><br>
+    <label for="">cuando quiere ser contactado</label><br>
+    <input type="checkbox"value="m" name="juana">mañana <br>
+    <input type="checkbox"value="t" name="felipe">tarde <br>
+    </fieldset> 
+    <a class="css-boton boton-send" id="btn" href="#">
+        Enviar
+    </a>
+
+    </p>
+    </div>
+    </div>
+    </body>
+    <footer class="footer"> 
         <div>
             <ul>
             <p>Tienda Shisen Lab</p>
@@ -61,9 +88,14 @@
             <p>54 11 2280 1537</p>
         </ul>
         </div>
-        <div>
-            <p> Stalkeanos en</p>
-        </div>
+    <div>
+        <p> Stalkeanos en</p>
+    </div>
+    <div class="social">
+        <a href="#"><img src="../images/35mm/facebook.png" alt="facebook"></a>
+        <a href="#"><img src="../images/35mm/twitter.png" alt="twitter"></a>
+        <a href="#"><img src="../images/35mm/instagram.png" alt="instagram"></a>
+    </div>
     </footer>
 </body>
 </html>
