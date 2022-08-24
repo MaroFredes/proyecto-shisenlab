@@ -3,63 +3,91 @@
     <head lang="es">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE= edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/styles.css">
-        <title>Lentes</title>
+        <link rel="stylesheet" href="css/bootstrap.bundle.min.js">
+        <title>lentes</title>
     </head>
-    <body class="grid-contenedor">
-        <header class="grid-fondoheader">
-            <img src="../images/encabezado/Shisen Lab.jpg" alt="tituloshisenlab">            
+    <body>
+        <div class="container">
+        <header class="fondoheader">
+            <img src="../images/encabezado/Shisen Lab.jpg" alt="tituloshisenlab">
+            <div class="search">
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="buscar">
+                    <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+                </form>
+                </div>
+            <nav>
+                <ul class="acorh">
+                    <li id="inicio"><a href="../index.html">inicio</a>
+                    <li id="camaras"><a href="camaras.html">camaras</a>
+                    <ul>
+                        <li><a href="./pages/formato35mm/formato35mm.html">formato35mm</a></li>
+                        <li><a href="./pages/formato120mm/formato120mm.html">formato120mm</a></li>
+                        <li><a href="./pages/formato110mm/formato110mm.html">formato110mm</a></li>
+                        <li><a href="./pages/pointandshot/pointandshot.html">piontandshot</a></li>
+                        <li><a href="./pages/instantaneas/instantaneas.html">instantaneas</a></li>
+                    </ul>
+                    </li>
+                    <li id="film"><a href="film.html">Film</a>
+                    <ul>
+                        <li><a href="./pages/film35mm/film35mm.html">film 35mm</a></li>
+                        <li><a href="./pages/film120mm/film120mm.html">film 120mm</a></li>
+                        <li><a href="./pages/film110mm/film110mm.html">film 110mm</a></li>
+                        <li><a href="./pages/filminstantaneo/filminstantaneo.html">film instantaneo</a></li>
+                    </ul>
+                    </li>
+                    <li id="servicios"><a href="servicios.html">servicios</a>
+                    <ul>
+                        <li><a href="./pages/digitalizacion/digitalizacion.html">digitalizacion</a></li>
+                        <li><a href="./pages/revelados+digitalizacion/reveladosydigitalizado.html">revelado y digitalizacion</a></li>
+                    </ul>
+                    </li><li id="lentes"><a href="./lentes.html">lentes</a>
+                    </li>
+                    <li id="contacto"><a href="contacto.html">contacto</a>
+                </ul>
+            </nav>
         </header>
-        <nav class="grid-nav">
-            <ul class="flex-acorh">
-                <li id="inicio"><a href="../index.html">inicio</a>
-                <li id="camaras"><a href="camaras.html">camaras</a>
-                <ul>
-                    <li><a href="./pages/formato35mm/formato35mm.html">formato35mm</a></li>
-                    <li><a href="./pages/formato120mm/formato120mm.html">formato120mm</a></li>
-                    <li><a href="./pages/formato110mm/formato110mm.html">formato110mm</a></li>
-                    <li><a href="./pages/pointandshot/pointandshot.html">piontandshot</a></li>
-                    <li><a href="./pages/instantaneas/instantaneas.html">instantaneas</a></li>
-                </ul>
-                </li>
-                <li id="film"><a href="film.html">Film</a>
-                <ul>
-                    <li><a href="./pages/film35mm/film35mm.html">film 35mm</a></li>
-                    <li><a href="./pages/film120mm/film120mm.html">film 120mm</a></li>
-                    <li><a href="./pages/film110mm/film110mm.html">film 110mm</a></li>
-                    <li><a href="./pages/filminstantaneo/filminstantaneo.html">film instantaneo</a></li>
-                </ul>
-                </li>
-                <li id="servicios"><a href="servicios.html">servicios</a>
-                <ul>
-                    <li><a href="./pages/digitalizacion/digitalizacion.html">digitalizacion</a></li>
-                    <li><a href="./pages/revelados+digitalizacion/reveladosydigitalizado.html">revelado y digitalizacion</a></li>
-                </ul>
-                </li><li id="lentes"><a href="./lentes.html">lentes</a>
-                </li>
-                <li id="contacto"><a href="contacto.html">contacto</a>
-            </ul>
-        </nav>
-        <h1 class="margen">lentes</h1>
-        <section  class="grid-imagenes">
-            <div>
-                <img src="../images/35mm/lentes/lente7.jpg" alt="">
-                <p class="grid-parrafo">nikkor 50mm</p>
+        <h1 class="margen-lentes">lentes</h1>
+        <!-- inicio section grid-contenedor -->
+        <section class="row">
+            <div class="grid-contenedor">
+                
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <figure>
+                    <img src="../images/35mm/lentes/lente7.jpg" alt="lente nikkor 50mm">                    <div class="capa">
+                        <h3>lente nikkor 50mm</h3>
+                    </div>
+                </figure>
+                <p class="grid-parrafo">Lente Nikkor 50mm</p>
             </div>
-            <div>
-                <img src="../images/35mm/lentes/lente6.jpg" alt="nikon50mm">
-                <p class="grid-parrafo">nikon 50mm</p>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <figure>
+                    <img src="../images/35mm/lentes/lente6.jpg" alt="lente nikon 50mm">                    <div class="capa">
+                        <h3>lente nikon 50mm</h3>
+                    </div>
+                </figure>
+                <p class="grid-parrafo">Lente Nikon 50mm</p>
             </div>
-            <div>
-                <img src="../images/35mm/lentes/lente3.jpg" alt="canon50mm">
-                <p class="grid-parrafo">cannon 50mm</p>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <figure>
+                    <img src="../images/35mm/lentes/lente3.jpg" alt="lente canon 50mm">                    <div class="capa">
+                        <h3>lente canon 50mm</h3>
+                    </div>
+            </figure>
+                <p class="grid-parrafo">Lente Canon 50mm</p>
             </div>
-            <div>
-                <img src="../images/35mm/lentes/lente9.jpg" alt="">
-                <p class="grid-parrafo">petzval 80.5</p>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <figure>
+                    <img src="../images/35mm/lentes/lente9.jpg" alt="lente petzval 80.5">                <div class="capa">
+                    <h3>lente petzval 80.5</h3>
+                </div>
+            </figure>
+                <p class="grid-parrafo">Lente Petzval 80.5</p>
             </div>
-        </section>
+            </div>
+            </section>
+            <!-- fin section grid-contenedor -->
             <div class="novypromo"><p> Novedades y Promos</p>
                 <form action="">
                 <label for="email">escribinos tu email</label><br>
@@ -69,7 +97,7 @@
             <a class="css-boton boton-send" id="btn" href="#">
                 Enviar
             </a>
-            <footer class=grid-footer> 
+            <footer class="footer"> 
                 <div>
                     <ul>
                     <p>Tienda Shisen Lab</p>
@@ -86,8 +114,10 @@
             <div>
                 <p> Stalkeanos en</p>
             </div>
-            <div>
-                <p>Información Fiscal</p>    
+            <div class="social">
+                <a href="#"><img src="../images/35mm/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="../images/35mm/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="../images/35mm/instagram.png" alt="instagram"></a>
             </div>
             </footer>
         </body>

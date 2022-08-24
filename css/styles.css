@@ -1,3 +1,4 @@
+/*------Declaraciones generales----------*/
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +6,47 @@
 }
 
 
-/*-------HEADER-----*/
-.grid-fondoheader {
+/*!
+ * Bootstrap Grid v4.6.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/*-------HEADER/NAV-----*/
+.fondoheader {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -16,22 +56,19 @@
 }
 
 
+.header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .header > img{
     width: 250px;
     height: 150px;
     display: flex;
     text-align: center;
-    align-items: center;
 }
 
 /*-------NAV------*/
-.grid-nav{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    
-}
-
 ul.acorh,
 ul.acorh * {
     margin: 0;
@@ -99,20 +136,34 @@ ul.acorh li a:hover {
     color: #fff;
 }
 
-/*-----BODY------*/
 
-body {
-    background-color: rgb(253, 251, 255);
+/*-----MAIN/BODY------*/
+@font-face {
     font-family: caviar;
-    margin: auto;
-    padding: auto;
-
+    src: url("../fonts/CaviarDreams.ttf");
 }
 
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: caviar;
+    width: 70%;
+    background-color: #ffffff;
+}
+
+.container{
+    width: 80%;
+    max-width: 1000px;
+    margin:0px 55px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 0px 12px;
+    width: 100%;
+}
 
 .encabezadocentro {
     display: flex;
     text-align: center;
+    box-sizing: border-box;
 }
 
 
@@ -121,7 +172,7 @@ body {
     display: block;
     margin: 0 auto;
     display: flex;
-    justify-content: center
+    justify-content: flex-end;
 }
 
 input#search-bar{
@@ -132,7 +183,9 @@ input#search-bar{
     font-size: 1rem;
     border: 1px solid #dbec40;
     outline: none;
+
 }
+
 .search{
     display: flex;
     align-items: flex end;
@@ -149,32 +202,83 @@ input#search-bar{
 }
 
 
-@font-face {
-    font-family: caviar;
-    src: url("../fonts/CaviarDreams.ttf");
-}
-
-.grid-imagenes{
-    background-color: rgb(253, 251, 255);
+.grid-contenedor{
+    background-color: white;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%; 
-    grid-template-rows: 50px;
-    grid-column-gap: 50px;
-    margin-left: 25px;
+    grid-template-rows: 70% 70% 70% 70%;
+    grid-column-gap: 50% 50% 50% 50%;
+    grid-row-gap: 50% 50% 50% 50%;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
 }
 
+.grid-contenedor figure{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
 
+.grid-contenedor figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    max-width: 100%;
+}
+
+.grid-contenedor figure .capa{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgb(219, 236, 64, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.grid-contenedor figure:hover > img{
+    transform: scale(1.3);
+}
+
+.grid-contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.grid-contenedor figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.grid-contenedor figure:hover > .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+} 
 
 .grid-parrafo{
-    background-color:  #ffffff;
+    background-color: white;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%; 
-    grid-template-rows: 50px;
+    grid-template-rows: 50% 50% 50% 50%;
     grid-column-gap: 50px;
     margin-left: 30px;
     margin-inline-end: 30px;
     box-sizing: border-box;
-
+    width: 100%;
+    height: auto;
 }
 
 .hijo {
@@ -183,41 +287,61 @@ input#search-bar{
 
 }
 
+.container{
+    background-color: #ffffff;
+    width: 100%;
+}
+
+
 .margen{
     margin-bottom: 15px;
     padding-left: 20px;
 }
 
-.top{
-    margin-bottom: 20px;
+.margen-lentes{
+    margin-bottom: 100px;
+    padding-left: 20px;
 }
 
 
-
+.top{
+    margin-bottom: 20px;
+}
 
 .formato{
     list-style: none;
     display: flex;
     justify-content:left;
     align-items: flex-start;
-    padding: 10px 10px 10px 50px;
+    padding: 10px 10px 10px 40px;
     background: #b37ad8;
     color: #000;
     font-size: 16px;
     border: 0;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
-
 }
 
 
+.listas-anclas{
+    list-style: none;
+    color: #000;
+}
+
+
+.anclas{
+    padding: 25px;
+    margin: 10px;
+}
 
 .novypromo{
     padding-top: 60px;
     margin-top : 150px;
     box-sizing: border-box;
     position: relative;
+    background-color: #ffffff;
 }
+
 
 .noveyofer{
     display: flex;
@@ -225,6 +349,8 @@ input#search-bar{
     align-items: center;
     margin-bottom: 100px;
 }
+
+
 .css-boton {
     display: inline-block;
     background-color: #dbec40;
@@ -246,120 +372,5 @@ input#search-bar{
     -ms-user-select: none;
     user-select: none;
     box-sizing: border-box;
-    margin-bottom: .80em;
-}
-
-.form{
-    margin: 5px;
-    padding: 10%;
-}
-
-/*------FOOTER------*/
-.grid-footer{
-    margin: auto;
-    padding: auto;
-    background: #b37ad8;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;  
-    box-sizing: border-box;
-}
-
-
-
-
-
-
-
-/*---------- media Q---------*/
-/*------mobile first------*/
-@media only screen and (max-width: 320px) {
-    body .grid-contenedor{
-        background-color: #b37ad8;
-    }
-
-    .grid-fondoheader{
-        background-color: #b37ad8;
-    }
-
-    .grid-nav{
-        background-color: #b37ad8;
-    }
-    .grid-imagenes{
-        background-color: #b37ad8;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    .grid-parrafo{
-        background-color: #b37ad8;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    .grid-fondoheader{
-        background-color: #b37ad8;
-    }
-
-}
-/*------tablet------*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-    body .grid-contenedor{
-        background-color: #b37ad8;
-    }
-
-    .grid-fondoheader{
-        background-color: #b37ad8;
-        
-    }
-
-    .grid-nav{
-        background-color: #b37ad8;
-    }
-    .grid-imagenes{
-        background-color: #b37ad8;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    .grid-parrafo{
-        background-color: #b37ad8;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    .grid-fondoheader{
-        background-color: #b37ad8;
-    }
-
-}
-
-/*------desktop------*/
-@media only screen and (min-width: 961px) {
-
-    body .grid-contenedor{
-        background-color:  #ffffff;
-    }
-
-    .grid-fondoheader{
-        background-color: #ffffff;
-        
-    }
-
-    .grid-nav{
-        background-color: #ffffff ;
-    }
-    .grid-imagenes{
-        background-color: #ffffff ;
-    }
-
-    .grid-parrafo{
-        background-color: #ffffff;
-    }
-
-    .grid-fondoheader{
-        background-color:  #ffffff;
-    }
-
+    margin-bottom: 50px;
 }

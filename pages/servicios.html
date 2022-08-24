@@ -3,69 +3,92 @@
     <head lang="es">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE= edge">
-        <title>servicios</title>
         <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="css/bootstrap.bundle.min.js">
+        <title>servicios</title>
     </head>
-        <body class="grid-contenedor">
-            <header class="grid-fondoheader">
-                <img src="../images/encabezado/Shisen Lab.jpg" alt="tituloshisenlab">           
+        <body>
+            <div class="container">
+            <header class="fondoheader">
+                <img src="../images/encabezado/Shisen Lab.jpg" alt="tituloshisenlab">       
+                <div class="search">
+                    <form class="search-container">
+                        <input type="text" id="search-bar" placeholder="buscar">
+                        <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+                    </form>
+                    </div>
+                <nav>
+                    <ul class="acorh">
+                        <li id="inicio"><a href="../index.html">inicio</a>
+                        <li id="camaras"><a href="camaras.html">camaras</a>
+                        <ul>
+                            <li><a href="./pages/formato35mm/formato35mm.html">formato35mm</a></li>
+                            <li><a href="./pages/formato120mm/formato120mm.html">formato120mm</a></li>
+                            <li><a href="./pages/formato110mm/formato110mm.html">formato110mm</a></li>
+                            <li><a href="./pages/pointandshot/pointandshot.html">piontandshot</a></li>
+                            <li><a href="./pages/instantaneas/instantaneas.html">instantaneas</a></li>
+                        </ul>
+                        </li>
+                        <li id="film"><a href="film.html">Film</a>
+                        <ul>
+                            <li><a href="./pages/film35mm/film35mm.html">film 35mm</a></li>
+                            <li><a href="./pages/film120mm/film120mm.html">film 120mm</a></li>
+                            <li><a href="./pages/film110mm/film110mm.html">film 110mm</a></li>
+                            <li><a href="./pages/filminstantaneo/filminstantaneo.html">film instantaneo</a></li>
+                        </ul>
+                        </li>
+                        <li id="servicios"><a href="servicios.html">servicios</a>
+                        <ul>
+                            <li><a href="">digitalizacion</a></li>
+                            <li><a href="">revelado y digitalizacion</a></li>
+                        </ul>
+                        </li><li id="lentes"><a href="lentes.html">lentes</a>
+                        </li>
+                        <li id="contacto"><a href="contacto.html">contacto</a>
+                    </ul>
+                </nav>
             </header>
-            <nav class="grid-nav">
-                <ul class="flex-acorh">
-                    <li id="inicio"><a href="../index.html">inicio</a>
-                    <li id="camaras"><a href="camaras.html">camaras</a>
-                    <ul>
-                        <li><a href="./pages/formato35mm/formato35mm.html">formato35mm</a></li>
-                        <li><a href="./pages/formato120mm/formato120mm.html">formato120mm</a></li>
-                        <li><a href="./pages/formato110mm/formato110mm.html">formato110mm</a></li>
-                        <li><a href="./pages/pointandshot/pointandshot.html">piontandshot</a></li>
-                        <li><a href="./pages/instantaneas/instantaneas.html">instantaneas</a></li>
-                    </ul>
-                    </li>
-                    <li id="film"><a href="film.html">Film</a>
-                    <ul>
-                        <li><a href="./pages/film35mm/film35mm.html">film 35mm</a></li>
-                        <li><a href="./pages/film120mm/film120mm.html">film 120mm</a></li>
-                        <li><a href="./pages/film110mm/film110mm.html">film 110mm</a></li>
-                        <li><a href="./pages/filminstantaneo/filminstantaneo.html">film instantaneo</a></li>
-                    </ul>
-                    </li>
-                    <li id="servicios"><a href="servicios.html">servicios</a>
-                    <ul>
-                        <li><a href="">digitalizacion</a></li>
-                        <li><a href="">revelado y digitalizacion</a></li>
-                    </ul>
-                    </li><li id="lentes"><a href="lentes.html">lentes</a>
-                    </li>
-                    <li id="contacto"><a href="contacto.html">contacto</a>
-                </ul>
-            </nav>
-            <h1 class="noveyofer">novedades y ofertas</h1>
             <div>
                 <h1 class="margen">servicios</h1>
                 <div>
-            <section class="formato">  
+                    <section class="formato">  
                 <article>
-                    <li> <a href="../pages/digitalizacion/digitalizacion.html">Digitalizacion</a></li>
-                    <li> <a href="../pages/revelados+digitalizacion/reveladosydigitalizado.html">Revelados + Digitalizacion</a> </li>
+                    <li><a href="">Digitalizacion</a></li>
+                    <li><a href="">Revelados + Digitalizacion</a></li>
                 </article>
                 </section>
-                <section  class="grid-imagenes">
-                    <div>
-                        <img src="../images/35mm/reveladoydigit1.png" alt="reveladoydigitalizacion">
-                        <p class="grid-parrafo">revelado y digitalizacion</p>
+        <!-- inicio section grid-contenedor -->
+        <section class="row">
+            <div class="grid-contenedor">
+                
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <figure>
+                    <img src="../images/35mm/reveladoydigit1.png" alt="revelado y digitalizacion">                    <div class="capa">
+                        <h3>revelado y digitalizado</h3>
                     </div>
-                    <div>
-                        <img src="../images/35mm/solodigit.png" alt="solodigitalizado">
-                        <p class="grid-parrafo">digitalizacion</p>
+                </figure>
+                <p class="grid-parrafo">Revelado y Digitalizado</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <figure>
+                    <img src="../images/35mm/solodigit.png" alt="solo digitalizado">                    <div class="capa">
+                        <h3>digitalizado</h3>
                     </div>
-                    <div>
-                        <img src="../images/35mm/1solorev.png" alt="solorevelado">
-                        <p class="grid-parrafo">revelado</p>
+                </figure>
+                <p class="grid-parrafo">Digitalizado</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <figure>
+                    <img src="../images/35mm/1solorev.png" alt="solo revelado">                    <div class="capa">
+                        <h3>revelado</h3>
                     </div>
-                    </div>
-            </section >
+            </figure>
+                <p class="grid-parrafo">Revelado</p>
+            </div>
+
+            </div>
+            </section>
+            <!-- fin section grid-contenedor -->
             <div class="novypromo"><p> Novedades y Promos</p>
                 <form action="">
                 <label for="email">escribinos tu email</label><br>
@@ -76,7 +99,7 @@
                 Enviar
             </a>
 
-            <footer class=grid-footer> 
+            <footer class="footer"> 
                 <div>
                     <ul>
                     <p>Tienda Shisen Lab</p>
@@ -93,8 +116,10 @@
             <div>
                 <p> Stalkeanos en</p>
             </div>
-            <div>
-                <p>Información Fiscal</p>    
+            <div class="social">
+                <a href="#"><img src="../images/35mm/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="../images/35mm/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="../images/35mm/instagram.png" alt="instagram"></a>
             </div>
             </footer>
 
