@@ -6,7 +6,8 @@
 }
 
 ul, 
-ol{
+ol,
+li {
     list-style: none;
 }
 
@@ -20,7 +21,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #b37ad8;
 }
 
 
@@ -30,7 +31,7 @@ a{
     display: flex;
     text-align: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #b37ad8;
 }
 
 .encabezadocentro {
@@ -55,7 +56,7 @@ input#search-bar{
     font-size: 1rem;
     border: 1px solid #dbec40;
     outline: none;
-    background-color: #ffffff;
+    background-color:#b37ad8;
 }
 .search{
     display: flex;
@@ -81,20 +82,21 @@ input#search-bar{
 
 /*-------NAV------*/
 .nav ul li {
-    display: flex;
-    justify-content:space-between;
-    list-style-type: none;
-    justify-content: center;
-    background-color: #b37ad8;
-    box-sizing: border-box;
-}
+        display: flow-root;
+        box-sizing: content-box;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
 /*-----BODY------*/
 
 
 
 body {
-    background-color: rgb(253, 251, 255);
+    background-color: #b37ad8;
     font-family: caviar;
     margin: auto;
     padding: auto;
@@ -124,7 +126,7 @@ section.grid-hijo {
 
 
 .parrafo{
-    background-color:  #ffffff;
+    background-color:#b37ad8;
     display: grid;
     grid-template-columns:  25%;
     grid-template-rows: 50px;
@@ -156,7 +158,7 @@ section.grid-hijo {
     justify-content:left;
     align-items: flex-start;
     padding: 10px 10px 10px 50px;
-    background: #ffffff;
+    background: #b37ad8;
     color: #000;
     font-size: 16px;
     border: 0;
@@ -226,7 +228,7 @@ section.grid-hijo {
 /*------tablet------*/
 @media only screen and (min-width: 527px) and (max-width: 560px) {
     body .grid-contenedor{
-        background-color: #ffffff;
+        background-color: #b37ad8;
     }
 
     section .form{
@@ -256,7 +258,7 @@ section.grid-hijo {
 @media only screen and (min-width: 561px) and (max-width:1200px){
 
     body .grid-contenedor{
-        background-color:  #ffffff;
+        background-color:  #b37ad8;
     }
 
     section .form{
@@ -284,7 +286,7 @@ section.grid-hijo {
 @media only screen and (min-width: 561px) and (max-width:1200px){
 
     body .grid-contenedor{
-        background-color:  #ffffff;
+        background-color:  #b37ad8;
     }
 
     section .form{
