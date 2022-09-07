@@ -11,42 +11,41 @@
     <header class="fondoheader">
         <img src="../images/encabezado/Shisen Lab.jpg" alt="tituloshisenlab">        
         </header>
-        <nav class="nav">
-            <ul>
-                <li id="inicio"><a href="../index.html">inicio</a>
-                <li id="camaras"><a href="camaras.html">camaras</a>
-                </li>
-                <li id="film"><a href="film.html">Film</a>
-                </li>
-                <li id="servicios"><a href="servicios.html">servicios</a>
-                </li><li id="lentes"><a href="lentes.html">lentes</a>
-                </li>
-                <li id="contacto"><a href="contacto.html">contacto</a>
-            </ul>
-        </nav>
+        <main>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="camaras.html">camaras</a></li>
+                    <li><a href="film.html">film</a></li>
+                    <li><a href="lentes.html">lentes</a></li>
+                    <li><a href="servicios.html">servicios</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
+                </ul>
+            </nav>
             <section class="form">
             <form action=""></form>
                 <div class="top">
                     <p>Dejenos sus datos para que nos comuniquemos con usted</p>
                 </div>
-                <fieldset>
+                <fieldset class="cajaform"><br>
                 <legend class="top">Formulario de contacto</legend>
-                <div style="position: relative;"><label for="nombre">nombre</label><br>
-                <input type="text" name ="nombre"><br>
+                <div style="position: relative;">
+                    <label for="nombre">nombre</label><br>
+                        <input type="text" name ="nombre"><br>
                 </div>
-                <label for="telefono">telefono</label><br>
-                <input type="number"name="telefono"><br>
-                <label for="email">email</label><br>
-                <input type="email"name="email"><br>
-                <label for="">cuando quiere ser contactado</label><br>
-                <input type="checkbox"value="m" name="juana">mañana <br>
-                <input type="checkbox"value="t" name="felipe">tarde <br>
+                    <label for="telefono">telefono</label><br>
+                        <input type="number"name="telefono"><br>
+                    <label for="email">email</label><br>
+                        <input type="email"name="email"><br>
+                    <label for="">cuando quiere ser contactado</label><br>
+                        <input type="checkbox"value="m" name="juana">mañana <br>
+                        <input type="checkbox"value="t" name="felipe">tarde <br>
                 </fieldset> 
-                <a class="css-boton boton-send" id="btn" href="#">
-                    Enviar
-                </a>
-                </p>
+            <form action="" method="post">
+                <input type="submit" value="enviar" id="boton">                
+            </form>
             </section>
+    </main>
     <footer class=footer> 
         <div>
             <ul>
@@ -63,6 +62,12 @@
         </div>
         <div>
             <p> Stalkeanos en</p>
+        </div>
+        <div class="social">
+            <a href="https://web.whatsapp.com/"><img src="../images/redes sociales/whatsapp.png" alt="icono de whatsapp y link"></a>
+            <a href="https://www.facebook.com/"><img src="../images/redes sociales/facebook.png" alt="icono de facebook y link"></a>
+            <a href="https://www.instagram.com/"><img src="../images/redes sociales/instagram.png" alt="icono de instagram y link"></a>
+            <a href="https://twitter.com/"><img src="../images/redes sociales/twitter.png" alt="icono de twitter y link"></a>
         </div>
     </footer>
 </body>

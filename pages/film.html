@@ -12,17 +12,15 @@
                     <img src="../images/encabezado/Shisen Lab.jpg" alt="tituloshisenlab">
                 </div>
             </header>
-            <nav class="nav">
-                <ul>
-                    <li id="inicio"><a href="../index.html">inicio</a>
-                    <li id="camaras"><a href="camaras.html">camaras</a>
-                    </li>
-                    <li id="film"><a href="./pages/film.html">film</a>
-                    </li>
-                    <li id="servicios"><a href="servicios.html">servicios</a>
-                    </li><li id="lentes"><a href="lentes.html">lentes</a>
-                    </li>
-                    <li id="contacto"><a href="contacto.html">contacto</a>
+            <main>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="camaras.html">camaras</a></li>
+                    <li><a href="film.html">film</a></li>
+                    <li><a href="lentes.html">lentes</a></li>
+                    <li><a href="servicios.html">servicios</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
                 </ul>
             </nav>
             <div>
@@ -36,7 +34,7 @@
                     </article>
                     </section>
                 </div>
-            <section  class="grid-hijo>
+            <section class="grid-hijo">
                     <div>
                     <img src="../images/35mm/film35mm/film35.1.jpg" alt="kodak400">
                     <p class="grid-parrafo">kodak 400</p>
@@ -56,32 +54,39 @@
             </section>
 
                 <div class="novypromo"><p> Novedades y Promos</p>
+                <div formulario-email>
                     <form action="">
-                    <label for="email">escribinos tu email</label><br>
-                <input type="email"name="email"><br>
-                </form>    
-                </div>
-                <a class="css-boton boton-send" id="btn" href="#">
-                    Enviar
-                </a>
-                <footer class=footer> 
-                    <div>
-                        <ul>
+                        <label for="email">escribinos tu email</label><br>
+                            <input type="email"name="email"><br>
+                    </form>    
+                    <form action="" method="post">
+                        <input type="submit" value="enviar" id="boton">    
+                    </form>
+                </div>        
+            </main>
+            <footer class=footer> 
+                <div>
+                    <ul>
                         <p>Tienda Shisen Lab</p>
                         <p>Lugones 3830</p>
                         <p>Ciudad Autónoma de Buenos Aires</p>
                     </ul>
-                    </div>
-                    <div>
-                        <ul>
+                </div>
+                <div>
+                    <ul>
                         <p>info@shisenlab.com.ar</p>
                         <p>54 11 2280 1537</p>
                     </ul>
-                    </div>
+                </div>
                 <div>
                     <p> Stalkeanos en</p>
                 </div>
-
+                <div class="social">
+                    <a href="https://web.whatsapp.com/"><img src="../images/redes sociales/whatsapp.png" alt="icono de whatsapp y link"></a>
+                    <a href="https://www.facebook.com/"><img src="../images/redes sociales/facebook.png" alt="icono de facebook y link"></a>
+                    <a href="https://www.instagram.com/"><img src="../images/redes sociales/instagram.png" alt="icono de instagram y link"></a>
+                    <a href="https://twitter.com/"><img src="../images/redes sociales/twitter.png" alt="icono de twitter y link"></a>
+                </div>
                 </footer>
         </body>
         </html>

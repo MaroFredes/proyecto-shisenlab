@@ -21,7 +21,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #b37ad8;
+    background-color: #ffffff;
 }
 
 
@@ -31,7 +31,7 @@ a{
     display: flex;
     text-align: center;
     align-items: center;
-    background-color: #b37ad8;
+    background-color:  #b37ad8;
 }
 
 .encabezadocentro {
@@ -56,7 +56,7 @@ input#search-bar{
     font-size: 1rem;
     border: 1px solid #dbec40;
     outline: none;
-    background-color:#b37ad8;
+    background-color:#ffffff;
 }
 .search{
     display: flex;
@@ -81,15 +81,44 @@ input#search-bar{
 
 
 /*-------NAV------*/
-.nav ul li {
-        display: flow-root;
-        box-sizing: content-box;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin: 5%;
+    flex-wrap: wrap;
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links li a:hover {
+    color: #dbec40;
+}
+.nav-links li {
+    position: relative;
+}
+.nav-links li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #dbec40;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before{
+    width: 80%;
+}
+
 
 /*-----BODY------*/
 
@@ -105,6 +134,17 @@ body {
     grid-template-columns: 1fr;
 }
 
+/*-------novedades y ofertas-----*/
+.noveyofer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*-----------imagenes---------------*/
 .grid-contenedor-padre{
     display: grid;
     grid-area:auto ;
@@ -119,14 +159,15 @@ section.grid-hijo {
     flex-wrap: wrap;
     width: auto;
     height: auto;
-    margin: bottom 100px;
+    margin: 0%;
+    padding: 10%;
     justify-content: space-around;
-
+    background-color: #ffffff;
 }
 
 
 .parrafo{
-    background-color:#b37ad8;
+    background-color:#ffffff;
     display: grid;
     grid-template-columns:  25%;
     grid-template-rows: 50px;
@@ -136,21 +177,166 @@ section.grid-hijo {
     box-sizing: border-box;
 }
 
+/*-------formulario para recibir info por mail---------*/
 .novypromo{
-    margin: 10px;
     padding-top: 10px;
-    margin-top : 0px;
+    margin-top : 10px;
     box-sizing: border-box;
     position: relative;
+    background-color: #b37ad8;
+    display: flex;
+    justify-content:first baseline;
+}
+
+.formulario-email form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50%;
+    
+}
+/*---------boton enviar---------*/
+input#boton{
+    padding: 5px 50px;
+    color: #000;
+    font-size: 1em;
+    background-color: #dbec40;
+    border: 0px;
+    border-radius: 5px;
+    font-family: caviar;
+    box-shadow: 0px 4px 0px #c0ce46;
+    transition: background-color .25s;
+}
+
+input#boton:hover{
+    background-color: #f5f7b5;
+}
+
+/*-------algunas cositas extras---------*/
+.formato{
+    list-style: none;
+    display: flex;
+    justify-content:left;
+    align-items: flex-start;
+    padding: 10px 10px 10px 50px;
+    background: #b37ad8;
+    color: #000;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
 
 }
 
-.noveyofer{
+.margen{
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+/*------- formulario contacto-----*/
+
+.top{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    background-color: #dbec40;
 }
+.form{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 25px;
+    padding: 20%;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+
+/*------FOOTER------*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b37ad8;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;  
+    box-sizing: border-box;
+
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 5px;
+}
+
+
+/*---------- media Q---------*/
+
+/*------tablet------*/
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+    body .grid-contenedor{
+        background-color: #b37ad8;
+    }
+
+
+    .formato{
+        list-style: none;
+        display: flex;
+        justify-content:left;
+        align-items: flex-start;
+        padding: 10px 10px 10px 50px;
+        background: #b37ad8;
+        color: #000;
+        font-size: 16px;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+    
+    }
+    
+    .margen{
+        margin-bottom: 15px;
+        padding-left: 20px;
+    }
+    
+    /*----------formulario contacto--------*/
+
+    .top{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        background-color: #dbec40;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        margin-top: 25px;
+        padding: 20%;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+    }
+
+
+        input#boton{
+            padding: 5px 50px;
+            color: #000;
+            font-size: 1em;
+            background-color: #dbec40;
+            border: 0px;
+            border-radius: 5px;
+            font-family: caviar;
+        }
+        
+}
+
+/*------desktop 1------*/
+@media only screen and (min-width: 668px) and (max-width:1200px){
+
+    body .grid-contenedor{
+        background-color:  #b37ad8;
+    }
 
 .formato{
     list-style: none;
@@ -172,140 +358,90 @@ section.grid-hijo {
     padding-left: 20px;
 }
 
+/*----------formulario contacto--------*/
 .top{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    background-color: #dbec40;
+    height: 10px;
 }
 .form{
     display: flex;
     justify-content: center;
     margin: 10px;
+    margin-top: 25px;
     padding: 20%;
     flex-wrap: wrap;
+    background-color: #ffffff;
 }
 
-.css-boton {
+/*-------boton e enviar---*/
 
-    background-color: #dbec40;
-    padding: 10px;
-    color: #444;
-    font-family: inherit;
-    font-size: 100%;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    cursor: pointer;
-    border: 1px solid #999;
-    border: transparent;
-    border-radius: 2px;
-    margin-top: 10px;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    box-sizing: border-box;
-    margin-bottom: .1em;
-}
-
-/*------FOOTER------*/
-.footer{
-    margin: auto;
-    padding: auto;
-    background-color: #b37ad8;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;  
-    box-sizing: border-box;
-
-}
-
-
-
-/*---------- media Q---------*/
-
-/*------tablet------*/
-@media only screen and (min-width: 527px) and (max-width: 560px) {
-    body .grid-contenedor{
-        background-color: #b37ad8;
+    input#boton{
+        padding: 5px 50px;
+        color: #000;
+        font-size: 1em;
+        background-color: #dbec40;
+        border: 0px;
+        border-radius: 5px;
+        font-family: caviar;
     }
-
-    section .form{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 30%;
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .top{
-        display: flex;
-        flex-wrap: wrap; 
-        justify-content: center;
-        margin: 15%;
-        }
-
-
-    .css-boton{
-        margin: 10px;
-    }
-}
-
-/*------desktop 1------*/
-@media only screen and (min-width: 561px) and (max-width:1200px){
-
-    body .grid-contenedor{
-        background-color:  #b37ad8;
-    }
-
-    section .form{
-        padding: 30%;
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .top{
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    }
-
-    .css-boton{
-        margin: 15px;
-        display: flex;
-        flex-wrap: wrap;
-    }
+    
 }
 
 /*------desktop 2------*/
-@media only screen and (min-width: 561px) and (max-width:1200px){
+@media only screen and (min-width: 1201px) and (max-width:1366px){
 
     body .grid-contenedor{
         background-color:  #b37ad8;
     }
 
-    section .form{
-        padding: 30%;
-        margin-top: 50px;
+
+    .formato{
+        list-style: none;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content:left;
+        align-items: flex-start;
+        padding: 10px 10px 10px 50px;
+        background: #b37ad8;
+        color: #000;
+        font-size: 16px;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+    
     }
+    
+    .margen{
+        margin-bottom: 15px;
+        padding-left: 20px;
+    }
+    
+/*----------formulario contacto--------*/
 
     .top{
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        background-color: #dbec40;
+        height: 10px;
     }
-
-    .css-boton{
-        margin: 15px;
+    .form{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        margin-top: 25px;
+        padding: 20%;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+    }
+    
+/*--------footer-----*/
+    
+    .footer{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 }
