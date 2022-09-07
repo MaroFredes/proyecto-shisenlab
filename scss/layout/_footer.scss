@@ -1,0 +1,18 @@
+/*------FOOTER------*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b37ad8;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;  
+    box-sizing: border-box;
+
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 5px;
+}

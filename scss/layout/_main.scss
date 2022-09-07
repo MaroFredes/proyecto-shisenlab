@@ -1,0 +1,169 @@
+/*-------NAV------*/
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin: 5%;
+    flex-wrap: wrap;
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links li a:hover {
+    color: #dbec40;
+}
+.nav-links li {
+    position: relative;
+}
+.nav-links li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #dbec40;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before{
+    width: 80%;
+}
+
+
+/*-----BODY------*/
+
+
+
+body {
+    background-color: #b37ad8;
+    font-family: caviar;
+    margin: auto;
+    padding: auto;
+    grid-template-areas: "grid-contenedor.padre","grid-hijo","footer";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+/*-------novedades y ofertas-----*/
+.noveyofer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*-----------imagenes---------------*/
+.grid-contenedor-padre{
+    display: grid;
+    grid-area:auto ;
+    
+}
+
+section.grid-hijo {
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin: 0%;
+    padding: 10%;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+
+
+.parrafo{
+    background-color:#ffffff;
+    display: grid;
+    grid-template-columns:  25%;
+    grid-template-rows: 50px;
+    grid-column-gap: 50px;
+    margin-left: 30px;
+    margin-inline-end: 30px;
+    box-sizing: border-box;
+}
+
+/*-------formulario para recibir info por mail---------*/
+.novypromo{
+    padding-top: 10px;
+    margin-top : 10px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #b37ad8;
+    display: flex;
+    justify-content:first baseline;
+}
+
+.formulario-email form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50%;
+    
+}
+/*---------boton enviar---------*/
+input#boton{
+    padding: 5px 50px;
+    color: #000;
+    font-size: 1em;
+    background-color: #dbec40;
+    border: 0px;
+    border-radius: 5px;
+    font-family: caviar;
+    box-shadow: 0px 4px 0px #c0ce46;
+    transition: background-color .25s;
+}
+
+input#boton:hover{
+    background-color: #f5f7b5;
+}
+
+/*-------algunas cositas extras---------*/
+.formato{
+    list-style: none;
+    display: flex;
+    justify-content:left;
+    align-items: flex-start;
+    padding: 10px 10px 10px 50px;
+    background: #b37ad8;
+    color: #000;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+.margen{
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+/*------- formulario contacto-----*/
+
+.top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: #dbec40;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 25px;
+    padding: 20%;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}

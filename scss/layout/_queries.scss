@@ -1,0 +1,174 @@
+/*---------- media Q---------*/
+
+/*------tablet------*/
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+    body .grid-contenedor{
+        background-color: #b37ad8;
+    }
+
+
+    .formato{
+        list-style: none;
+        display: flex;
+        justify-content:left;
+        align-items: flex-start;
+        padding: 10px 10px 10px 50px;
+        background: #b37ad8;
+        color: #000;
+        font-size: 16px;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+    
+    }
+    
+    .margen{
+        margin-bottom: 15px;
+        padding-left: 20px;
+    }
+    
+    /*----------formulario contacto--------*/
+
+    .top{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        background-color: #dbec40;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        margin-top: 25px;
+        padding: 20%;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+    }
+
+
+        input#boton{
+            padding: 5px 50px;
+            color: #000;
+            font-size: 1em;
+            background-color: #dbec40;
+            border: 0px;
+            border-radius: 5px;
+            font-family: caviar;
+        }
+        
+}
+
+/*------desktop 1------*/
+@media only screen and (min-width: 668px) and (max-width:1200px){
+
+    body .grid-contenedor{
+        background-color:  #b37ad8;
+    }
+
+.formato{
+    list-style: none;
+    display: flex;
+    justify-content:left;
+    align-items: flex-start;
+    padding: 10px 10px 10px 50px;
+    background: #b37ad8;
+    color: #000;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+.margen{
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+/*----------formulario contacto--------*/
+.top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: #dbec40;
+    height: 10px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 25px;
+    padding: 20%;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+/*-------boton e enviar---*/
+
+    input#boton{
+        padding: 5px 50px;
+        color: #000;
+        font-size: 1em;
+        background-color: #dbec40;
+        border: 0px;
+        border-radius: 5px;
+        font-family: caviar;
+    }
+    
+}
+
+/*------desktop 2------*/
+@media only screen and (min-width: 1201px) and (max-width:1366px){
+
+    body .grid-contenedor{
+        background-color:  #b37ad8;
+    }
+
+
+    .formato{
+        list-style: none;
+        display: flex;
+        justify-content:left;
+        align-items: flex-start;
+        padding: 10px 10px 10px 50px;
+        background: #b37ad8;
+        color: #000;
+        font-size: 16px;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+    
+    }
+    
+    .margen{
+        margin-bottom: 15px;
+        padding-left: 20px;
+    }
+    
+/*----------formulario contacto--------*/
+
+    .top{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        background-color: #dbec40;
+        height: 10px;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        margin-top: 25px;
+        padding: 20%;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+    }
+    
+/*--------footer-----*/
+    
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
